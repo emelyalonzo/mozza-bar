@@ -1,0 +1,71 @@
+.reservas {
+    @include flexCenter(column, center, center, center, nowrap);
+    @include fullContainer();
+    background-color: blueviolet;
+    color: $white;
+    h2 {
+        font-size: 1.2rem;
+    }
+    &__content {
+        @include flexCenter(row, center, center, center, nowrap);
+        padding: 1rem;
+        margin: 2rem;
+        form {
+            margin-right: 2rem;
+            width: 60%;
+            label {
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin: 0.2rem 0;
+            }
+            select {
+                padding: 0.2rem;
+            }
+            input {
+                font-size: 0.9rem;
+                margin: 0.8rem 0;
+            }
+            button {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.9rem;
+                background-color: $secondaryColor;
+                color: $white;
+                border:none;
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                padding: 0.5rem;
+            }
+            .otherBtn {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            a {
+                background-color: $secondaryColor;
+                font-size: 0.9rem;
+                color: $white;
+                border:none;
+                margin-bottom: 0.3rem;
+                padding: 0.4rem;
+                text-decoration: none;
+            }
+            
+        }
+        &__info{
+            align-self: flex-start;
+            font-size: 0.9rem;
+            h3 {
+                padding: 0;
+                margin: 0;
+                font-size: 1.7rem;
+                color: $primaryColor;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

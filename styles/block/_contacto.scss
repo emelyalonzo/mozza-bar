@@ -1,0 +1,59 @@
+.contacto {
+    @include fullContainer();
+    &__ways{
+        @include flexCenter(column, center, center, center, nowap);
+        color: $white;
+        padding: 2rem 0;
+        h2 {
+            margin: 0.5rem 0;
+            padding: 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        h3 {
+            margin: 0.5rem 0;
+            padding: 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        &__content {
+            @include flexCenter(row, space-evenly, center, center, nowap);
+            width: 100%;
+            padding-top: 3rem;
+            &__unit {
+                @include flexCenter(column, center, center, center, nowap);
+                font-size: 0.9rem;
+                .fa-map-marked-alt, .fa-mobile, .fa-envelope{
+                    color: $primaryColor;
+                    font-size:2rem;
+                }
+            }
+        }
+    }
+    &__sociales {
+        @include flexCenter(column, center, center, center, nowap);
+        color: $black;
+        padding: 2rem 0;
+        h3 {
+            margin: 0.5rem 0;
+            padding: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        &__btn {
+            @include flexCenter(row, space-evenly, center, center, nowap);
+            margin-top: 3rem;
+            a{
+                margin: 0 1rem;
+                padding: 0.5rem;
+                text-decoration: none;
+                font-weight: 500;
+                color: $black;
+                border: 1px solid $black;
+            }
+        }
+    }
+}

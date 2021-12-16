@@ -1,0 +1,111 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/responsive';
+
+@import './block/blog';
+@import './block/concepto';
+@import './block/contacto';
+@import './block/footer';
+@import './block/fotos';
+@import './block/header';
+@import './block/home';
+@import './block/menu';
+@import './block/reservas';
+
+/*@include flexCenter(row,space-evenly,center,center,wrap);
+
+font-family: 'Cinzel', serif; Home mozzabar font
+font-family: 'Open Sans', sans-serif; rest of the website
+*/
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-family: 'Cinzel', serif;
+    }
+    header { 
+        margin: 0;   
+        h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    .home {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7) ),url("../images/barra.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        .title {
+            h2 {
+                text-transform: capitalize;
+                font-family: 'Gwendolyn', cursive;
+            }
+        }
+    }
+    .concepto {
+        background-image: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8) ),url("../images/bgLeaves.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fotos {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) ),url("../images/bgLeavesDark.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .carta {
+        background-color: $white;
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+    .reservas {
+        background-image: linear-gradient( rgba(46, 46, 46, 0.9),rgba(41, 41, 41, 0.8) ) ,url("../images/bgTables.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+    .blog {
+        &__content{
+            &__1{
+                background-image: linear-gradient( rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8) ) ,url("../images/terrazaMB.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &__2{
+                background-image: linear-gradient( rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8) ) ,url("../images/fresas.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &__3{
+                background-image: linear-gradient( rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8) ) ,url("../images/brunch.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        }
+    }
+    .contacto {
+        padding: 0;
+        margin: 0;
+        &__ways{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8) ) ,url("../images/tarta.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            h2 {
+                font-family: 'Cinzel', serif;
+            }
+        }
+    }
+}

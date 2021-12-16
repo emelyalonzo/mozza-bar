@@ -1,0 +1,35 @@
+footer {
+    @include flexCenter(column, space-evenly, center, center, wap);
+    background-color:$grey;
+    padding: 3rem 0;
+    .footer__content {
+        @include flexCenter(row, space-around, flex-start, flex-start, wap);
+        width: 100%;
+        &__column {
+            @include flexCenter(column, center, center, flex-start, nowap);
+            width: 200px;
+            h3 {
+                text-transform: uppercase;
+                font-size: 0.8rem;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+    .footer__copy {
+        @include flexCenter(row, space-around, center, flex-start, wap);
+        width: 100%;
+        margin-top: 2rem;
+        &__icons {
+            a {
+                margin: 0 1rem;
+            }
+        }
+    }
+}

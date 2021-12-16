@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozza Bar Restaurant</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51b3715d61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h3>Mozza Bar</h3>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#concepto">concepto</a>
+            <a href="#fotos">fotos</a>
+            <a href="#menu">menu</a>
+            <a href="#reservas">reservas</a>
+            <a href="#blog">blog</a>
+            <a href="#contacto">contacto</a>
+        </nav>
+    </header>
+
+    <div id="home" class="home"> <!--./images/barra.jpg-->
+        <div class="title">
+            <h2>descubre</h2>
+            <h1>mozza bar</h1>
+        </div>
+        <p>--- &xcirc; ---</p>
+        <h3>we are open</h3>
+    </div>
+
+    <div id="concepto" class="concepto">
+        <div class="concepto__info">
+            <h2>concepto</h2>
+            <p>
+                Mozza Bar es un fantástico restaurante de comida internacional 
+                ubicado en el exclusivo barrio de Salamanca.
+            </p>
+            <p>
+                Disfruta de sus desayunos, estimula tus sentidos con nuestros mejores platos
+                o disfruta del AfterWork en buena compañia.
+            </p>
+            <p>
+                En Mozza Bar encontráis clasicos de la gastronomia mundial, elaborados con productos
+                frescos y de buena calidad.
+            </p>
+        </div>
+    </div>
+
+
+    <div id="fotos" class="fotos">
+        <div class="fotosBox">
+            <img class="fotosBox__brick" src="./images/ambiente.jpg" alt="Separador de ambiente con cuadrados marrones" >
+            <img class="fotosBox__brick" src="./images/cocina.jpg" alt="Cocinero trabajando junto con tus ayudantes" >
+            <img class="fotosBox__brick" src="./images/despensa.jpg" alt="La barra del bar del restaurante junto con una estanteria despensa de botellas" >
+            <img class="fotosBox__brick" src="./images/elefante.jpg" alt="Elefante de mimbre de decoracion colgado en la pared blanca" >
+            <img class="fotosBox__brick" src="./images/terraza.jpg" alt="Mesa en la terraza del restaurante con un par de copas sobre un mantel blanco" >
+        </div>
+    </div>
+
+
+    <div id="menu" class="carta">
+        <h2>carta</h2>
+        <div class="cartaCarousel">
+            <div class="cartaCarousel__nav">
+                <a href="#desayunosP">desayunos</a>
+                <a href="#cartaP">carta</a>
+                <a href="#cocktailP">cocktails</a>
+            </div>
+            <div class="cartaCarousel__slides">
+                <div id="desayunosP">
+                    <img src="./images/desayunos.png" alt="carta con desayunos">
+                </div>
+                <div id="cartaP">
+                    <img src="./images/carta.png" alt="carta principal">
+                </div>
+                <div id="cocktailP">
+                    <img src="./images/cocktails.png" alt="carta de cocktails">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="reservas" class="reservas">
+        <h2>reservas</h2>
+        <div class="reservas__content" >
+            <form method="POST">
+                <label for="clients">Personas: </label>
+                <input type="number" name="number-clients" id="clients" min="1" max="10" required>
+                <label for="hour">Hora: </label>
+                <input type="time" name="time" id="hour"  min="07:30" max="01:30"required><br>
+                <label for="type">Tipo de mesa: </label>
+                <select id="type" name="table">
+                    <option value="m-exterior">Mesa de exterior</option>
+                    <option value="m-barra">Mesa de barra</option>
+                    <option value="m-interior">Mesa de interior</option>
+                    <option value="m-VIP">Mesa VIP</option>
+                </select><br>
+                <label for="phone">Número de teléfono: </label>
+                <input type="tel" id="phone" name="tlf-number" pattern="[0-9]{9}"><br>
+                <small>(Números en formato: 123123123)</small><br>
+                <button type="submit">¡Reservar!🤤</button><br>
+        
+                <label>Si no hay disponibilidad, apuntese en la lista de espera</label><br>
+                <div class="otherBtn">
+                    <a href="#">Lista de espera</a>
+                    <a href="#">Solicitud de grupo</a>
+                </div>
+                    
+            </form>
+            <div class="reservas__content__info">
+                <h3>Mozza Bar</h3>
+                <p>Conde de peñalver, 64 Madrid 28006</p>
+                <p>Abrimos de lunes a domingo de 07:30 a 01:30</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="blog" class="blog">
+        <h2>blog</h2>
+        <div class="blog__content"> 
+            <div class="blog__content__unit blog__content__1" >
+                <h3>mozza bar abre nueva terraza de verano en bombay lounge</h3>
+            </div>
+            <div class="blog__content__unit blog__content__2" >
+                <h3>promoción especial: tarta & cocktail 6,90€</h3>
+            </div>
+            <div class="blog__content__unit blog__content__3" >
+                <h3>mozza bar: brunch 2 de marzo</h3>
+            </div>
+        </div>
+        <a href="#">ver todas las entradas</a>
+    </div>
+
+
+    <div id="contacto" class="contacto">
+        <div class="contacto__ways">
+            <h2>mozza bar</h2>
+            <h3>ven cuando quieras</h3>
+            <div class="contacto__ways__content">
+                <div class="contacto__ways__content__unit contacto__ways__content__direction">
+                    <span class="fas fa-map-marked-alt"></span>
+                    <p>C/Conde de Peñalver, 64</p>
+                </div>
+                <div class="contacto__ways__content__unit contacto__ways__content__telephone">
+                    <span class="fas fa-mobile"></span>
+                    <p>910258327</p>
+                </div>
+                <div class="contacto__ways__content__unit contacto__ways__content_email">
+                    <span class="far fa-envelope"></span>
+                    <p>hola@mezzabar.es</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="contacto__sociales">
+            <h3>siguenos</h3>
+            <div class="contacto__sociales__btn">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__content__column footer__content__column1">
+                <h3>enlaces de interés</h3>
+                <a href="./Aviso-Legal">Aviso Legal</a>
+                <a href="./Cookies">Cookies</a>
+            </div>
+            <div class="footer__content__column footer__content__column2">
+                <h3>horarios</h3>
+                <p>Lunes a Domingo</p>
+                <p>07:30 - 01:30</p>
+            </div>
+            <div class="footer__content__column footer__content__column3">
+                <h3>contacto</h3>
+                <p>C/Conde de Peñalver, 64 28006 - Madrid</p>
+                <p>910258327</p>
+                <p>hola@mezzabar.es</p>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p>@2021 Todos los derechos reservados</p>
+            <div class="footer__copy__icons">
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

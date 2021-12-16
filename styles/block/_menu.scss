@@ -1,0 +1,66 @@
+.carta {
+    @include fullContainer();
+    @include flexCenter(column, center, center, center, nowrap);
+    padding: 1rem;
+    h2 {
+        font-size: 1.2rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .cartaCarousel {
+        @include flexCenter(column, center, center, center, nowrap);
+        &__nav {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            a{
+                margin: 0 0.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                color: $black;
+                &:hover {
+                    border-bottom: 1px solid $primaryColor;
+                }
+            }
+        }
+
+        &__slides {
+            height: auto;
+            width: 50%;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            &::-webkit-scrollbar {
+                width: 40px;
+                height: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: $secondaryColor;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            div {
+                scroll-snap-align: start;
+                flex-shrink: 0;
+                /*width: 300px;
+                height: 300px;*/
+                margin-right: 30px;
+                transform-origin: center center;
+                transform: scale(1);
+                transition: transform 0.5s;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

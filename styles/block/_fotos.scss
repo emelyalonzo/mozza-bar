@@ -1,0 +1,24 @@
+.fotos {
+    @include fullContainer();
+    @include flexCenter(row, center, center, center, wrap);
+    padding: 3rem;
+    .fotosBox {
+        
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        max-height: 800px;
+        margin-left: -8px; /* Adjustment for the gutter */
+        width: 90%;
+        &__brick {
+            margin: 0 8px 8px 0;
+        }
+        img {
+            width: 25%;
+            height: 20%;
+        }
+        
+    }
+    
+}
+    
