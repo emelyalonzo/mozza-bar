@@ -16,6 +16,7 @@ The website of Mozza Bar's restaurant, where you can book a table, check the men
 ## 🖇 Requirements <a name="requirements"></a>
 It was asked to do only the structure of the HTML, but to practice I have decided to include Sass for the styles of the desktop version.
 It's made with HTML and Sass. It has some cool features like a carousel for the menu, and masonry grid for the gallery of photos.
+![alt text](https://github.com/emelyalonzo/mozza-bar/blob/master/images/req-restaurant.jpg?raw=true)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
