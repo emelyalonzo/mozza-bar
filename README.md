@@ -6,6 +6,10 @@
 - [Getting Started](#getting_started)
 - [Idea](#idea)
 
+
+https://user-images.githubusercontent.com/68464035/146378874-a992a458-7598-49b4-9216-0b33829dda44.mp4
+
+
 ## 🧐 About <a name = "about"></a>
 The website of Mozza Bar's restaurant, where you can book a table, check the menu and get in touch with the restaurant staff.
 
